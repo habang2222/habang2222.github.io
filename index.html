@@ -95,7 +95,7 @@
     <p>
         This is Habang’s GitHub blog.<br>
         If you have any questions or find any bugs,
-        <span id="email" style="color:red; text-decoration: underline; cursor:pointer;">
+        <span id="email" data-email="habang20251219@gmail.com" style="color:red; text-decoration: underline; cursor:pointer;">
             habang20251219@gmail.com
         </span>
     </p>
@@ -105,7 +105,7 @@
     const email = document.getElementById("email");
 
     email.addEventListener("click", function () {
-        navigator.clipboard.writeText(email.innerText);
+        navigator.clipboard.writeText(email.dataset.email);
         alert("이메일이 복사되었습니다.");
     });
 </script>
