@@ -6,6 +6,50 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.post-list {
+				display: grid;
+				gap: 2rem;
+			}
+
+			.major p {
+				color: #374151 !important;
+				font-size: 1.15rem;
+				line-height: 1.8;
+			}
+
+			.post-card {
+				border: 1px solid rgba(39, 40, 51, 0.12);
+				border-radius: 0.75rem;
+				padding: 2rem;
+				background: #fff;
+				color: #272833;
+				box-shadow: 0 12px 30px rgba(39, 40, 51, 0.08);
+			}
+
+			.post-card h3 {
+				margin-bottom: 0.5rem;
+				color: #1f2937;
+				font-size: 1.7rem;
+			}
+
+			.post-card p {
+				margin-bottom: 1.25rem;
+				color: #4b5563;
+				font-size: 1.08rem;
+				line-height: 1.8;
+			}
+
+			.post-card .button.primary {
+				background-color: #272833;
+				color: #ffffff !important;
+				border-color: #272833;
+			}
+
+			#main .major h2 {
+				font-size: 2.6rem;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 		<div id="page-wrapper">
@@ -34,12 +78,21 @@
 				<div class="container">
 					<header class="major">
 						<h2>Development</h2>
+						<p>Development links, coding profiles, and projects gathered in one place.</p>
 					</header>
 
 					<section id="content">
-						<header class="major">
-							<h2>No Content Has Been Uploaded Yet</h2>
-						</header>
+						<div class="post-list">
+							<article class="post-card">
+								<header>
+									<h3>Baekjoon Profile</h3>
+									<p>Visit my Baekjoon Online Judge profile to see solved problems and coding practice activity.</p>
+								</header>
+								<ul class="actions">
+									<li><a href="https://www.acmicpc.net/user/victor07lee" class="button primary" target="_blank" rel="noopener noreferrer">Open Baekjoon</a></li>
+								</ul>
+							</article>
+						</div>
 					</section>
 				</div>
 			</div>
