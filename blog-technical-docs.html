@@ -6,6 +6,65 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.post-list {
+				display: grid;
+				gap: 2rem;
+			}
+
+			.major p {
+				color: #374151 !important;
+				font-size: 1.15rem;
+				line-height: 1.8;
+			}
+
+			.post-card {
+				border: 1px solid rgba(39, 40, 51, 0.12);
+				border-radius: 0.75rem;
+				padding: 2rem;
+				background: #fff;
+				color: #272833;
+				box-shadow: 0 12px 30px rgba(39, 40, 51, 0.08);
+			}
+
+			.post-card h3 {
+				margin-bottom: 0.5rem;
+				color: #1f2937;
+				font-size: 1.7rem;
+			}
+
+			.post-card p {
+				margin-bottom: 1.25rem;
+				color: #4b5563;
+				font-size: 1.08rem;
+				line-height: 1.8;
+			}
+
+			.post-card .post-date {
+				display: block;
+				margin-bottom: 0.75rem;
+				color: #6b7280;
+				font-size: 0.98rem;
+				font-weight: 600;
+				letter-spacing: 0.03em;
+			}
+
+			.post-card .button.primary {
+				background-color: #272833;
+				color: #ffffff !important;
+				border-color: #272833;
+			}
+
+			.post-card .button {
+				background-color: transparent;
+				color: #272833 !important;
+				border: 1px solid #272833;
+			}
+
+			#main .major h2 {
+				font-size: 2.6rem;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 		<div id="page-wrapper">
@@ -34,12 +93,23 @@
 				<div class="container">
 					<header class="major">
 						<h2>Blog / Technical Docs</h2>
+						<p>Notes, reports, and technical writing collected in a blog-friendly format.</p>
 					</header>
 
 					<section id="content">
-						<header class="major">
-							<h2>No Content Has Been Uploaded Yet</h2>
-						</header>
+						<div class="post-list">
+							<article class="post-card">
+								<header>
+									<h3>Market Analysis</h3>
+									<span class="post-date">Created: 2026-04-09 01:49 (Asia/Seoul)</span>
+									<p>A blog-style summary page for the uploaded market analysis report, with a direct PDF download link.</p>
+								</header>
+								<ul class="actions">
+									<li><a href="blog/market-analysis.html" class="button primary">Read Post</a></li>
+									<li><a href="blog/%EC%BB%A4%EB%A6%AC%EC%96%B4%20%ED%8C%A8%EC%8A%A4%20%ED%83%90%EC%83%89%20%EB%AF%B8%EC%85%98%20%EB%B3%B4%EA%B3%A0%EC%84%9C.pdf" class="button">Read PDF</a></li>
+								</ul>
+							</article>
+						</div>
 					</section>
 				</div>
 			</div>
