@@ -11,6 +11,56 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.image.avatar {
+				display: inline-block;
+				width: 250px;
+				height: 250px;
+				border-radius: 50%;
+				overflow: hidden;
+			}
+
+			.image.avatar img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: center 38%;
+				display: block;
+			}
+
+			.category-card {
+				display: block;
+				text-decoration: none;
+				color: inherit;
+			}
+
+			.category-card .icon.major {
+				cursor: pointer;
+			}
+
+			.category-card .category-icon {
+				background: #272833;
+				border-radius: 100%;
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				height: 6em;
+				width: 6em;
+				margin: 0 0 2em 0;
+			}
+
+			.category-card .category-icon img {
+				width: 2.4em;
+				height: 2.4em;
+				object-fit: contain;
+				display: block;
+			}
+
+			.category-card .icon-lowered:before,
+			.category-card .category-icon.icon-lowered img {
+				transform: translateY(0.18em);
+			}
+		</style>
 	</head>
 	<body class="is-preload landing">
 		<div id="page-wrapper">
@@ -20,26 +70,18 @@
 					<h1 id="logo"><a href="index.html">Landed</a></h1>
 					<nav id="nav">
 						<ul>
-							<li><a href="index.html">Home</a></li>
 							<li>
-								<a href="#">Layouts</a>
+								<a href="#four">Categories</a>
 								<ul>
-									<li><a href="left-sidebar.html">Left Sidebar</a></li>
-									<li><a href="right-sidebar.html">Right Sidebar</a></li>
-									<li><a href="no-sidebar.html">No Sidebar</a></li>
-									<li>
-										<a href="#">Submenu</a>
-										<ul>
-											<li><a href="#">Option 1</a></li>
-											<li><a href="#">Option 2</a></li>
-											<li><a href="#">Option 3</a></li>
-											<li><a href="#">Option 4</a></li>
-										</ul>
-									</li>
+									<li><a href="development.html">Development</a></li>
+									<li><a href="ctf-wargame.html">CTF / Wargame</a></li>
+									<li><a href="bug-bounty.html">Bug Bounty</a></li>
+									<li><a href="blog-technical-docs.html">Blog / Technical Docs</a></li>
+									<li><a href="papers-conferences.html">Papers / Conferences</a></li>
+									<li><a href="contests-certifications.html">Contests / Certifications</a></li>
 								</ul>
 							</li>
 							<li><a href="elements.html">Elements</a></li>
-							<li><a href="#" class="button primary">Sign Up</a></li>
 						</ul>
 					</nav>
 				</header>
@@ -48,125 +90,109 @@
 				<section id="banner">
 					<div class="content">
 						<header>
-							<h2>The future has landed</h2>
-							<p>And there are no hoverboards or flying cars.<br />
-							Just apps. Lots of mother flipping apps.</p>
-						</header>
-						<span class="image"><img src="images/pic01.jpg" alt="" /></span>
+    <h1 style="font-size: 80px;">Habang_Blog</h1>
+
+    <p>
+        This is Habang’s GitHub blog.<br>
+        If you have any questions or find any bugs,
+        <span id="email" style="color:red; text-decoration: underline; cursor:pointer;">
+            habang20251219@gmail.com
+        </span>
+    </p>
+</header>
+
+<script>
+    const email = document.getElementById("email");
+
+    email.addEventListener("click", function () {
+        navigator.clipboard.writeText(email.innerText);
+        alert("이메일이 복사되었습니다.");
+    });
+</script>
+			<span class="image avatar"><img src="images/hgd.jpg" alt="center" /></span>
 					</div>
 					<a href="#one" class="goto-next scrolly">Next</a>
 				</section>
 
+
+
 			<!-- One -->
 				<section id="one" class="spotlight style1 bottom">
-					<span class="image fit main"><img src="images/pic02.jpg" alt="" /></span>
+					<span class="image fit main"><img src="images/6c.png" alt="" /></span>
 					<div class="content">
 						<div class="container">
 							<div class="row">
 								<div class="col-4 col-12-medium">
 									<header>
-										<h2>Odio faucibus ipsum integer consequat</h2>
-										<p>Nascetur eu nibh vestibulum amet gravida nascetur praesent</p>
+										<h2>Welcome to my blog</h2>
+										<p>Projects, study notes, and small experiments I want to keep building on.</p>
 									</header>
 								</div>
 								<div class="col-4 col-12-medium">
-									<p>Feugiat accumsan lorem eu ac lorem amet sed accumsan donec.
-									Blandit orci porttitor semper. Arcu phasellus tortor enim mi
-									nisi praesent dolor adipiscing. Integer mi sed nascetur cep aliquet
-									augue varius tempus lobortis porttitor accumsan consequat
-									adipiscing lorem dolor.</p>
+									<p>This space is where I collect what I am learning and making. I want it to stay simple, readable, and a little playful so visitors can quickly see what I care about.</p>
 								</div>
 								<div class="col-4 col-12-medium">
-									<p>Morbi enim nascetur et placerat lorem sed iaculis neque ante
-									adipiscing adipiscing metus massa. Blandit orci porttitor semper.
-									Arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer
-									mi sed nascetur cep aliquet augue varius tempus. Feugiat lorem
-									ipsum dolor nullam.</p>
+									<p>If you are here for updates, code, or ideas I am trying out, this is the starting point. I will keep shaping the page as the blog grows.</p>
 								</div>
 							</div>
 						</div>
 					</div>
-					<a href="#two" class="goto-next scrolly">Next</a>
-				</section>
-
-			<!-- Two -->
-				<section id="two" class="spotlight style2 right">
-					<span class="image fit main"><img src="images/pic03.jpg" alt="" /></span>
-					<div class="content">
-						<header>
-							<h2>Interdum amet non magna accumsan</h2>
-							<p>Nunc commodo accumsan eget id nisi eu col volutpat magna</p>
-						</header>
-						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
-						<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
-						</ul>
-					</div>
-					<a href="#three" class="goto-next scrolly">Next</a>
-				</section>
-
-			<!-- Three -->
-				<section id="three" class="spotlight style3 left">
-					<span class="image fit main bottom"><img src="images/pic04.jpg" alt="" /></span>
-					<div class="content">
-						<header>
-							<h2>Interdum felis blandit praesent sed augue</h2>
-							<p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
-						</header>
-						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
-						<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
-						</ul>
-					</div>
 					<a href="#four" class="goto-next scrolly">Next</a>
 				</section>
-
+		
 			<!-- Four -->
 				<section id="four" class="wrapper style1 special fade-up">
 					<div class="container">
 						<header class="major">
-							<h2>Accumsan sed tempus adipiscing blandit</h2>
-							<p>Iaculis ac volutpat vis non enim gravida nisi faucibus posuere arcu consequat</p>
+							<h2>All Categories</h2>
+							<p>(๑˃ᴗ˂)ﻭ</p>
 						</header>
 						<div class="box alt">
 							<div class="row gtr-uniform">
 								<section class="col-4 col-6-medium col-12-xsmall">
-									<span class="icon solid alt major fa-chart-area"></span>
-									<h3>Ipsum sed commodo</h3>
-									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+									<a href="development.html" class="category-card">
+										<span class="category-icon"><img src="images/connectdevelop-brands-solid-full.svg" alt="Development icon" /></span>
+										<h3>Development</h3>
+										<p>&nbsp;</p>
+									</a>
 								</section>
 								<section class="col-4 col-6-medium col-12-xsmall">
-									<span class="icon solid alt major fa-comment"></span>
-									<h3>Eleifend lorem ornare</h3>
-									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+									<a href="ctf-wargame.html" class="category-card">
+										<span class="icon solid alt major fa-lock icon-lowered"><span class="label">CTF / Wargame</span></span>
+										<h3>CTF / Wargame</h3>
+										<p>&nbsp;</p>
+									</a>
 								</section>
 								<section class="col-4 col-6-medium col-12-xsmall">
-									<span class="icon solid alt major fa-flask"></span>
-									<h3>Cubilia cep lobortis</h3>
-									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+									<a href="bug-bounty.html" class="category-card">
+										<span class="icon solid alt major fa-dollar-sign icon-lowered"><span class="label">Bug Bounty</span></span>
+										<h3>Bug Bounty</h3>
+										<p>&nbsp;</p>
+									</a>
 								</section>
 								<section class="col-4 col-6-medium col-12-xsmall">
-									<span class="icon solid alt major fa-paper-plane"></span>
-									<h3>Non semper interdum</h3>
-									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+									<a href="blog-technical-docs.html" class="category-card">
+										<span class="category-icon"><img src="images/blog-solid-full.svg" alt="Blog and technical docs icon" /></span>
+										<h3>Blog / Technical Docs</h3>
+										<p>&nbsp;</p>
+									</a>
 								</section>
 								<section class="col-4 col-6-medium col-12-xsmall">
-									<span class="icon solid alt major fa-file"></span>
-									<h3>Odio laoreet accumsan</h3>
-									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+									<a href="papers-conferences.html" class="category-card">
+										<span class="icon solid alt major fa-file icon-lowered"><span class="label">Papers / Conferences</span></span>
+										<h3>Papers / Conferences</h3>
+										<p>&nbsp;</p>
+									</a>
 								</section>
 								<section class="col-4 col-6-medium col-12-xsmall">
-									<span class="icon solid alt major fa-lock"></span>
-									<h3>Massa arcu accumsan</h3>
-									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+									<a href="contests-certifications.html" class="category-card">
+										<span class="icon solid alt major fa-id-card icon-lowered"><span class="label">Contests / Certifications</span></span>
+										<h3>Contests / Certifications</h3>
+										<p>&nbsp;</p>
+									</a>
 								</section>
 							</div>
 						</div>
-						<footer class="major">
-							<ul class="actions special">
-								<li><a href="#" class="button">Magna sed feugiat</a></li>
-							</ul>
-						</footer>
 					</div>
 				</section>
 
@@ -174,27 +200,19 @@
 				<section id="five" class="wrapper style2 special fade">
 					<div class="container">
 						<header>
-							<h2>Magna faucibus lorem diam</h2>
-							<p>Ante metus praesent faucibus ante integer id accumsan eleifend</p>
+							<h2>Contact Me</h2>
+							<p>If you have questions, feedback, or bug reports, send me an email directly.</p>
 						</header>
-						<form method="post" action="#" class="cta">
-							<div class="row gtr-uniform gtr-50">
-								<div class="col-8 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Your Email Address" /></div>
-								<div class="col-4 col-12-xsmall"><input type="submit" value="Get Started" class="fit primary" /></div>
-							</div>
-						</form>
+						<ul class="actions special">
+							<li><a href="mailto:habang20251219@gmail.com?subject=Contact%20from%20Habang_Blog" class="button primary">Send Email</a></li>
+						</ul>
 					</div>
 				</section>
 
 			<!-- Footer -->
 				<footer id="footer">
 					<ul class="icons">
-						<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-						<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+						<li><a href="https://github.com/habang2222" target="_blank" rel="noopener noreferrer" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
 					</ul>
 					<ul class="copyright">
 						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
