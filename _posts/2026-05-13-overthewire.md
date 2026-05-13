@@ -10,7 +10,7 @@ tags: [리눅스, 명령어, HSPACE, 과제]
 
 # [노션 원본 보기](https://www.notion.so/OverTheWire-35f0e129ee9b8060b9d4df6269670d7a?source=copy_link)
 
-## lv 2
+## lv 0
 
 ![image.png](/image/20260513overthewire/스크린샷 2026-05-13 210847.png)
 
