@@ -9,27 +9,27 @@ tags: [리눅스, 명령어, HSPACE, 과제]
 
 # lv 2
 
-![image.png](\image\스크린샷 2026-05-13 210847.png)
+![image.png](/image/20260513overthewire/스크린샷 2026-05-13 210847.png)
 
-![image.png](attachment:a1bed45e-d2be-41d4-9f95-243fa38bc72a:image.png)
+![image.png](/image/20260513overthewire/스크린샷 2026-05-13 210912.png)
 
 password == bandit0
 
 # lv 1
 
-![image.png](attachment:cc014eb9-ac3f-40ea-8d9c-c77e79170b77:image.png)
+![image.png](/image/20260513overthewire/스크린샷 2026-05-13 213158.png)
 
 즉 ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If 가 비밀번호이다
 
-![image.png](attachment:f69ef51d-8bf9-45e9-b329-60b6743fb152:image.png)
+![image.png](/image/20260513overthewire/스크린샷 2026-05-13 213328.png)
 
-![image.png](attachment:6b4d3a4a-3332-4760-9619-464503886742:image.png)
+![image.png](/image/20260513overthewire/스크린샷 2026-05-13 213338.png)
 
 # lv 2
 
 이 문제에서 가장 중요한점은 파일 이름이 “ - “ 라는 것입니다 이것은 cat으로 읽으려고 하여도 옵션으로 해석되어서 ./-로 읽으면 됩니다
 
-![image.png](attachment:ff3cf1fa-66be-4df9-9e8d-a05e6ece2931:image.png)
+![image.png](/image/20260513overthewire/스크린샷 2026-05-13 214117.png)
 
 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
 
@@ -37,18 +37,18 @@ password == bandit0
 
 이 문제 에선 --spaces in this filename— 이 파일을 봐야 하는데 띄워쓰기가 있어서 따옴표로 한번 감싸고  - 가 있어서 ./ 를 앞에 붙여서 하면
 
-![image.png](attachment:407bb947-ded8-4e8e-b13e-26afceead7a8:image.png)
+![image.png](/image/20260513overthewire/스크린샷 2026-05-13 214928.png)
 
 MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
 
 # lv 4
 
-![image.png](attachment:aa54054b-7973-47d0-83c3-6c3882a08bfb:image.png)
+![image.png](/image/20260513overthewire/스크린샷 2026-05-13 215148.png)
 
 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
 
 # lv 5
 
-![image.png](attachment:003096c7-dd64-418c-821a-7b0b02ce863d:image.png)
+![image.png](/image/20260513overthewire/스크린샷 2026-05-13 215814.png)
 
 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
