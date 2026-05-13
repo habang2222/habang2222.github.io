@@ -1,0 +1,33 @@
+title: Habang Dev Blog
+description: Security, development, and study notes.
+lang: ko-KR
+timezone: Asia/Seoul
+url: "https://habang2222.github.io"
+baseurl: ""
+
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:title/
+
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+header_pages:
+  - about.md
+  - category/development.md
+  - category/ctf-wargame.md
+  - category/bugbounty.md
+  - category/blog-techdocs.md
+  - category/papers-conferences.md
+  - category/contests-certifications.md
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "victo"
