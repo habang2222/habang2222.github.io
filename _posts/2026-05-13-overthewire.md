@@ -55,3 +55,61 @@ MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
 ![image.png](/image/20260513overthewire/스크린샷 2026-05-13 215814.png)
 
 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
+
+## lv6
+
+find / -user bandit7 -group bandit6 -size 33c
+
+찾는다 하위폴더에서 소유한사람은()이고 그룹은()이고 크기는 33비트인걸
+
+![image.png](/image/20260513overthewire/스크린샷 2026-05-14 123028.png)
+
+![image.png](/image/20260513overthewire/스크린샷 2026-05-14 123120.png)
+
+## lv7
+
+find / -user bandit7 -group bandit6 -size 33c
+
+찾는다 하위폴더에서 소유한사람은()이고 그룹은()이고 크기는 33비트인걸
+
+![image.png](/image/20260513overthewire/스크린샷 2026-05-14 123028.png)
+
+![image.png](/image/20260513overthewire/스크린샷 2026-05-14 123120.png)
+
+morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
+
+## lv8
+
+![image.png](/image/20260513overthewire/스크린샷 2026-05-14 132153.png)
+
+dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
+
+## lv9
+
+![image.png](/image/20260513overthewire/스크린샷 2026-05-14 133700.png)
+
+정렬하고 바로 그 정렬한줄 중복된거 지움
+
+4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
+
+## lv10
+
+![image.png](/image/20260513overthewire/스크린샷 2026-05-14 134626.png)
+
+![image.png](/image/20260513overthewire/스크린샷 2026-05-14 134641.png)
+
+FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
+
+## lv11
+
+![image.png](/image/20260513overthewire/스크린샷 2026-05-14 135919.png)
+
+dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
+
+## lv12
+
+![image.png](/image/20260513overthewire/스크린샷 2026-05-14 144912.png)
+
+한마디로 모든 문자들이 13번씩 밀려있다는 소리이므로
+
+![image.png](/image/20260513overthewire/스크린샷 2026-05-14 145524.png)
