@@ -325,3 +325,5 @@ pin은 0000~9999 까지 전부 시도 하면 됩니다
 그럼 실패가 나오다가 패스워드가 나오는데 패스워드만 나오게 바꾼후 하면 
 
 iCi86ttT4KSNe1armKiwbQNmB3YJP3q4
+
+![image.png](/image/20260513overthewire/스크린샷 2026-05-15 074616.png)
