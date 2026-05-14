@@ -8,7 +8,7 @@ tags: [리눅스, 명령어, HSPACE, 과제]
 
 ## OverTheWire
 
-# ['<<<<<<<'노션 원본 보기'>>>>>>>>'](https://www.notion.so/OverTheWire-35f0e129ee9b8060b9d4df6269670d7a?source=copy_link)
+# [<<<<<<<<<<<<<<노션 원본 보기>>>>>>>>>>>>>>](https://www.notion.so/OverTheWire-35f0e129ee9b8060b9d4df6269670d7a?source=copy_link)
 
 ## lv 0
 
