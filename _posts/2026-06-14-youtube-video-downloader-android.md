@@ -14,6 +14,7 @@ tags: [Android, APK, 유튜브, 다운로드, 앱제작]
 
 - YouTube 링크 저장
 - 저장한 YouTube 링크를 앱에서 바로 열기
+- 저장한 YouTube 링크 삭제
 - 저장한 YouTube 링크를 갤러리에 저장
 - 직접 MP4 URL 또는 로컬 동영상 파일을 갤러리에 저장
 
