@@ -8,13 +8,15 @@ tags: [Android, APK, 유튜브, 다운로드, 앱제작]
 
 우리가 제작한 유튜브 영상 다운로드 앱의 안드로이드 설치 파일입니다.
 
-[APK 다운로드](/downloads/youtube-video-downloader.apk?v=1.7)
+[APK 다운로드](/downloads/youtube-video-downloader.apk?v=1.8)
 
 ## 주요 기능
 
 - YouTube 링크 저장
 - 전체 화면 YouTube 홈 WebView에서 실제 모바일 YouTube 탐색/검색/시청
 - 전체 화면 Shorts WebView에서 실제 YouTube Shorts 탐색/시청
+- YouTube 영상 클릭 시 WebView 재생 대신 yt-dlp로 스트림을 준비해 앱 내부 ExoPlayer로 재생
+- 재생 화면을 아래로 드래그해 작은 미니플레이어로 전환
 - 홈/Shorts에서 하단 탭바를 숨기고 하단 손잡이를 탭하거나 위로 드래그해 표시
 - Android Chrome 모바일 사용자 에이전트와 모바일 YouTube 고정 URL 사용
 - 시스템 라이트/다크 모드에 맞춰 YouTube WebView 테마 보조 적용
