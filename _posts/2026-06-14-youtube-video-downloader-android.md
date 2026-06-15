@@ -13,8 +13,10 @@ tags: [Android, APK, 유튜브, 다운로드, 앱제작]
 ## 주요 기능
 
 - YouTube 링크 저장
-- YouTube 홈 스타일 WebView에서 실제 모바일 YouTube 탐색/검색/시청
-- Shorts WebView에서 실제 YouTube Shorts 탐색/시청
+- 전체 화면 YouTube 홈 WebView에서 실제 모바일 YouTube 탐색/검색/시청
+- 전체 화면 Shorts WebView에서 실제 YouTube Shorts 탐색/시청
+- 홈/Shorts 우측 숨김 패널을 왼쪽으로 드래그해 현재 영상 갤러리 저장
+- WebView 광고 요청 차단 및 광고 스킵/숨김 보조
 - 저장한 YouTube 링크를 앱에서 바로 열기
 - 저장한 YouTube 링크 삭제
 - 저장한 YouTube 링크를 갤러리에 저장
