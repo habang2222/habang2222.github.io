@@ -8,7 +8,7 @@ tags: [Android, APK, 유튜브, 다운로드, 앱제작]
 
 우리가 제작한 유튜브 영상 다운로드 앱의 안드로이드 설치 파일입니다.
 
-[APK 다운로드](/downloads/youtube-video-downloader.apk)
+[APK 다운로드](/downloads/youtube-video-downloader.apk?v=1.6)
 
 ## 주요 기능
 
