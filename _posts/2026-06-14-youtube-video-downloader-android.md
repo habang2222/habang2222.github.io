@@ -8,7 +8,7 @@ tags: [Android, APK, 유튜브, 다운로드, 앱제작]
 
 우리가 제작한 유튜브 영상 다운로드 앱의 안드로이드 설치 파일입니다.
 
-[APK 다운로드](/downloads/youtube-video-downloader-2.5.apk)
+[APK 다운로드](/downloads/youtube-video-downloader-2.6.apk)
 
 ## 주요 기능
 
@@ -22,9 +22,13 @@ tags: [Android, APK, 유튜브, 다운로드, 앱제작]
 - 홈/Shorts 우측 숨김 패널을 왼쪽으로 드래그해 현재 영상 갤러리 저장
 - WebView 플레이어 팝업, 전체화면, 보호 미디어 권한 처리로 YouTube 재생 안정화
 - YouTube 광고 프리롤 감지 시 스킵 버튼을 누르고 비정상 고속 재생을 자동 복구
+- YouTube 시청 페이지의 플레이어 영역 확대
+- 홈/앱 전환 시 재생 중이면 Picture-in-Picture 팝업 자동 전환
+- 재생 중 foreground service로 오디오 포커스와 웨이크락 유지 보강
 - 저장한 YouTube 링크를 앱에서 바로 열기
 - 저장한 YouTube 링크 삭제
 - 저장한 YouTube 링크를 갤러리에 저장
+- 다운로드 전에 yt-dlp 엔진을 주기적으로 업데이트
 - 저장한 영상의 제목/썸네일을 앱 안에 보존
 - 저장한 영상을 원클릭 삭제
 - 앱 안에서 저장된 영상 오프라인 시청
