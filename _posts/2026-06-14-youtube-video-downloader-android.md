@@ -8,7 +8,7 @@ tags: [Android, APK, 유튜브, 다운로드, 앱제작]
 
 우리가 제작한 유튜브 영상 다운로드 앱의 안드로이드 설치 파일입니다.
 
-[APK 다운로드](/downloads/youtube-video-downloader-3.1.apk)
+[APK 다운로드](/downloads/youtube-video-downloader-3.2.apk)
 
 ## 주요 기능
 
@@ -25,6 +25,8 @@ tags: [Android, APK, 유튜브, 다운로드, 앱제작]
 - YouTube 시청 페이지의 상태바 겹침 제거와 검은 화면을 만들던 강제 플레이어 CSS 제거
 - YouTube 시청 페이지에서 비디오 내부 요소는 건드리지 않고 플레이어 래퍼 높이만 보정
 - 홈/앱 전환 시 재생 중이면 Picture-in-Picture 팝업 자동 전환
+- Picture-in-Picture에서는 YouTube WebView 렌더링을 강제 CSS로 바꾸지 않아 검은 화면을 줄임
+- Picture-in-Picture 중에는 백그라운드 ExoPlayer 오디오를 중복 실행하지 않아 소리 끊김 완화
 - 재생 중 foreground service로 오디오 포커스와 웨이크락 유지 보강
 - 재생 중 백그라운드 오디오 스트림을 미리 준비해 화면 꺼짐 후 15초 안팎으로 멈추는 현상 완화
 - 저장한 YouTube 링크를 앱에서 바로 열기
