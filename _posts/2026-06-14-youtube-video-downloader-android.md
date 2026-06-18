@@ -8,7 +8,7 @@ tags: [Android, APK, 유튜브, 다운로드, 앱제작]
 
 우리가 제작한 유튜브 영상 다운로드 앱의 안드로이드 설치 파일입니다.
 
-[APK 다운로드](/downloads/youtube-video-downloader-3.3.apk)
+[APK 다운로드](/downloads/youtube-video-downloader-3.4.apk)
 
 ## 주요 기능
 
@@ -29,6 +29,8 @@ tags: [Android, APK, 유튜브, 다운로드, 앱제작]
 - Picture-in-Picture 중에는 백그라운드 ExoPlayer 오디오를 중복 실행하지 않아 소리 끊김 완화
 - Picture-in-Picture 진입은 fl_pip 방식처럼 Activity PIP 파라미터만 사용하고 WebView 내부 화면은 건드리지 않음
 - 재생 중 yt-dlp/ExoPlayer 사전 준비 작업을 멈춰 PIP 시청 중 끊김 원인을 줄임
+- 온라인 YouTube WebView 자동 PIP를 끄고 백그라운드에서는 오디오 서비스만 시도
+- 시청 페이지의 실제 video 레이어까지 확대해 검은 래퍼만 커지는 문제 완화
 - 재생 중 foreground service로 오디오 포커스와 웨이크락 유지 보강
 - 재생 중 백그라운드 오디오 스트림을 미리 준비해 화면 꺼짐 후 15초 안팎으로 멈추는 현상 완화
 - 저장한 YouTube 링크를 앱에서 바로 열기
