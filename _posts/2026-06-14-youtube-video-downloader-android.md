@@ -8,27 +8,26 @@ tags: [Android, APK, 유튜브, 다운로드, 앱제작]
 
 우리가 제작한 유튜브 영상 다운로드 앱의 안드로이드 설치 파일입니다.
 
-[APK 다운로드](/downloads/youtube-video-downloader-3.9.apk)
+[APK 다운로드](/downloads/youtube-video-downloader-4.0.apk)
 
 ## 주요 기능
 
 - YouTube 링크 저장
 - 전체 화면 YouTube 홈 WebView에서 실제 모바일 YouTube 탐색/검색/시청
 - 전체 화면 Shorts WebView에서 실제 YouTube Shorts 탐색/시청
-- YouTube 모바일 WebView 자체 플레이어로 영상 재생
+- YouTube 홈/검색은 모바일 YouTube WebView로 보고, 실제 시청은 빠른 임베드 플레이어로 재생
 - 홈/Shorts에서 하단 탭바를 숨기고 하단 손잡이를 탭하거나 위로 드래그해 표시
 - 현재 기기의 WebView 기반 모바일 Chrome 사용자 에이전트와 모바일 YouTube 고정 URL 사용
 - 시스템 라이트/다크 모드에 맞춰 YouTube WebView 테마 보조 적용
 - 홈/Shorts 우측 숨김 패널을 왼쪽으로 드래그해 현재 영상 갤러리 저장
 - WebView 플레이어 팝업, 전체화면, 보호 미디어 권한 처리로 YouTube 재생 안정화
 - YouTube 광고 프리롤 감지 시 스킵 버튼을 누르고 비정상 고속 재생을 자동 복구
-- YouTube 시청 페이지의 상태바 겹침 제거와 검은 화면을 만들던 강제 플레이어 CSS 제거
-- YouTube 시청 페이지에서 비디오 내부 요소는 건드리지 않고 플레이어 래퍼 높이만 보정
+- YouTube 시청 페이지에서 `yt-dlp` 스트림 추출 대기 없이 즉시 임베드 재생으로 전환
 - 홈/앱 전환 시 재생 중이면 Picture-in-Picture 팝업 자동 전환
 - Picture-in-Picture에서는 YouTube WebView 렌더링을 강제 CSS로 바꾸지 않아 검은 화면을 줄임
 - Picture-in-Picture 중에는 백그라운드 ExoPlayer 오디오를 중복 실행하지 않아 소리 끊김 완화
 - Picture-in-Picture 진입은 fl_pip 방식처럼 Activity PIP 파라미터만 사용하고 WebView 내부 화면은 건드리지 않음
-- 재생 중 yt-dlp/ExoPlayer 사전 준비 작업을 멈춰 PIP 시청 중 끊김 원인을 줄임
+- 재생 중 yt-dlp/ExoPlayer 사전 준비 작업을 사용하지 않아 시작 지연과 데이터 환경 버퍼링을 줄임
 - 온라인 YouTube WebView 자동 PIP를 끄고 백그라운드에서는 오디오 서비스만 시도
 - 시청 페이지의 실제 video 레이어까지 확대해 검은 래퍼만 커지는 문제 완화
 - 재생 중 foreground service로 오디오 포커스와 웨이크락 유지 보강
