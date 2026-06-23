@@ -8,7 +8,7 @@ tags: [Android, APK, 유튜브, 다운로드, 앱제작]
 
 우리가 제작한 유튜브 영상 다운로드 앱의 안드로이드 설치 파일입니다.
 
-[APK 다운로드](/downloads/youtube-video-downloader-4.2.apk)
+[APK 다운로드](/downloads/youtube-video-downloader-4.3.apk)
 
 ## 주요 기능
 
@@ -23,7 +23,7 @@ tags: [Android, APK, 유튜브, 다운로드, 앱제작]
 - WebView 안의 YouTube 플레이어는 네이티브 시청 화면으로 넘긴 뒤 정지/음소거해 오디오 포커스 충돌 완화
 - YouTube 시청 페이지에서 저해상도 단일 스트림을 우선 선택해 느린 데이터 환경의 시작 지연 완화
 - ExoPlayer 버퍼 시작 조건을 낮추고 재생 배속을 기본값으로 고정해 비정상 고속 재생 방지
-- 전체 네이티브 시청 레이어로 검은 래퍼와 실제 영상 크기가 따로 노는 문제 완화
+- 일반 영상은 YouTube 시청 페이지의 영상 영역만 네이티브 플레이어로 덮어 아래 추천/재생목록 영역을 유지
 - 백그라운드 전환이나 화면 꺼짐 중 `isPlaying=false`가 잠깐 들어와도 오디오 서비스를 즉시 중단하지 않음
 - 재생 중 foreground service로 오디오 포커스와 웨이크락 유지 보강
 - Android 13 이상 알림 권한 요청으로 백그라운드 미디어 서비스 안정성 보강
