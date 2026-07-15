@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EVE Remote Manager - 멀티 PC EVE 창 관리 도구 | Habang Dev Blog</title>
+  <meta name="description" content="여러 Windows PC에서 실행되는 EVE Online 창을 메인 PC에서 확인하는 경량 원격 관리 도구">
+  <link rel="canonical" href="https://habang2222.github.io/development/eve_online_어짜구/">
+  <link rel="stylesheet" href="/assets/main.css">
+  <style>
+    .download-row{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0}.download-button{display:inline-block;padding:12px 18px;border-radius:7px;color:#fff!important;text-decoration:none;font-weight:700}.primary{background:#2563eb}.secondary{background:#334155}.notice{padding:14px 16px;border-left:4px solid #f59e0b;background:#fffbeb;margin:18px 0}.status-table{width:100%;border-collapse:collapse}.status-table th,.status-table td{border:1px solid #ddd;padding:8px;text-align:left}
+  </style>
+</head>
+<body>
+<header class="site-header"><div class="wrapper"><a class="site-title" href="/">Habang Dev Blog</a><nav class="site-nav"><div class="trigger"><a class="page-link" href="/about/">About</a><a class="page-link" href="/category/development/">개발</a></div></nav></div></header>
+<main class="page-content"><div class="wrapper"><article class="post">
+  <header class="post-header"><h1 class="post-title">EVE Remote Manager - 멀티 PC EVE 창 관리 도구</h1><p class="post-meta">Jul 15, 2026 · victo</p></header>
+  <div class="post-content">
+    <p>여러 Windows PC에서 실행 중인 EVE Online 창을 메인 컴퓨터에서 한곳에 모아 확인하기 위한 <strong>수동 원격 관리 도구</strong>입니다.</p>
+    <p>현재 공개 버전은 <strong>Stage 1 프로토타입</strong>입니다. 원격 PC 연결 상태, 지연시간, EVE 창 개수, 제목, PID, 해상도와 최소화 상태를 표시합니다.</p>
+    <div class="download-row"><a class="download-button primary" href="/downloads/eve-remote-manager-stage1-windows-x64.zip">Windows x64 실행 파일 다운로드</a><a class="download-button secondary" href="/downloads/eve-remote-manager-stage1-source.zip">Stage 1 소스 코드 다운로드</a></div>
+    <div class="notice"><strong>현재 제한:</strong> 아직 실제 EVE 화면 미리보기와 원격 마우스·키보드 제어는 제공하지 않습니다.</div>
+    <h2>주요 특징</h2><ul><li>WPF Controller와 경량 Agent</li><li>.NET 8 + gRPC</li><li>설정 가능한 EVE 프로세스 탐지</li><li>연결 상태·지연·창 메타데이터 표시</li><li>Agent 약 51MB, Controller 약 156MB</li><li>Release 빌드 경고 0·오류 0, xUnit 테스트 통과</li></ul>
+    <h2>설치 전 요구 사항</h2><ul><li>Windows 10/11 x64</li><li><a href="https://dotnet.microsoft.com/ko-kr/download/dotnet/8.0">.NET 8 Desktop Runtime</a></li><li>Agent PC에는 ASP.NET Core Runtime 8 필요</li></ul>
+    <h2>실행 방법</h2><ol><li>Windows ZIP을 다운로드해 압축 해제합니다.</li><li>원격 PC에서 <code>Agent 실행.cmd</code>를 실행합니다.</li><li>메인 PC의 <code>Controller/appsettings.json</code>에 Agent 주소를 입력합니다.</li><li><code>Controller 실행.cmd</code>를 실행합니다.</li></ol>
+    <pre><code>{ "Name": "EVE PC 1", "Address": "http://192.168.0.20:5081" }</code></pre>
+    <h2>보안 주의사항</h2><p>Stage 1은 개발용 평문 HTTP/2입니다. Agent 포트를 인터넷에 직접 공개하지 말고 신뢰할 수 있는 LAN 또는 Tailscale/WireGuard 안에서만 시험하세요. TLS와 6자리 현장 페어링은 후속 단계에서 구현됩니다.</p>
+    <h2>의도적으로 지원하지 않는 기능</h2><ul><li>자동 플레이·타게팅·채굴·이동·공격·판매</li><li>매크로·반복 클릭·조건부 동작</li><li>입력 브로드캐스팅</li><li>메모리 읽기·DLL 주입·패킷 조작·화면 인식 자동화</li></ul>
+    <h2>개발 단계</h2><table class="status-table"><tr><th>단계</th><th>내용</th><th>상태</th></tr><tr><td>1</td><td>탐지·gRPC 상태·목록 UI</td><td>완료</td></tr><tr><td>2</td><td>화면 캡처와 썸네일</td><td>예정</td></tr><tr><td>3~5</td><td>단일 창 입력·세션 검증·TLS 페어링</td><td>예정</td></tr></table>
+    <h2>참고와 라이선스</h2><p>MIT 라이선스의 <a href="https://github.com/Phrynohyas/eve-o-preview">EVE-O Preview</a>를 UX 참고 자료로 사용했으며 원본 코드는 직접 복사하지 않았습니다.</p>
+  </div>
+</article></div></main>
+<footer class="site-footer"><div class="wrapper"><h2 class="footer-heading">Habang Dev Blog</h2><p>Security, development, and study notes.</p></div></footer>
+</body>
+</html>
