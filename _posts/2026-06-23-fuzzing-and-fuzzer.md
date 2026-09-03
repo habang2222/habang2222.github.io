@@ -40,15 +40,6 @@ AFL++는 단순히 랜덤으로 입력하는 것이 아니라, 어떤 입력값�
 - `instrumentation`: 프로그램 안에 추적 장치를 심는 것
 - `coverage-guided`: 프로그램의 어떤 부분까지 실행됐는지 보면서 입력값을 더 똑똑하게 만드는 퍼저
 
-### [google/fuzzing](https://github.com/google/fuzzing/tree/master)
-
-구글이 만든 fuzzing 자료 모음 저장소이다.
-
-하단 설명: fuzzing 관련 tutorial, example, discussion, research proposal, dictionary, documentation 등을 모아 둔 프로젝트이다.
-
-- `discussion`: 퍼징에 대한 토론이나 설명
-- `dictionary`: 퍼저가 입력값을 만들 때 참고하는 단어 목록
-
 ### [Honggfuzz](https://github.com/google/honggfuzz)
 
 하단 설명: security-oriented, feedback-driven, evolutionary fuzzer이며, 코드 커버리지를 사용해 버그를 찾는 general-purpose fuzzer이다.
@@ -64,3 +55,47 @@ C/C++ 프로그램 테스트, 반복 실행 가능한 라이브러리 테스트,
 ### [LibAFL](https://github.com/aflplusplus/libafl)
 
 직접 원하는 방식의 퍼저를 조립해 만들 수 있는 부품 모음이다.
+
+## 퍼징 방식
+
+### Random fuzzing
+
+무작위 문자열이나 바이트를 계속 생성해 대상 프로그램에 입력하는 방식이다. 적용 방법이 간단하고 예상하지 못한 입력을 만들 수 있지만, 프로그램이 요구하는 형식에 맞는 유효한 입력을 생성할 확률은 낮다.
+
+### Mutation-based fuzzing
+
+이미 정상적으로 동작하는 입력인 seed 또는 corpus를 가져와 조금씩 변형하는 방식이다.
+
+- 비트 뒤집기
+- 특정 바이트 변경
+- 데이터 추가 또는 삭제
+- 데이터 일부 복사
+
+Random fuzzing보다 유효한 입력을 만들 가능성이 높고 기존 corpus를 활용할 수 있다. 반면 seed에 전혀 없는 새로운 구조를 만들기는 어렵다.
+
+### Grammar-based fuzzing
+
+프로그램이 받아들이는 입력의 문법을 퍼저에 알려 주고, 그 문법에 맞는 테스트 입력을 생성하는 방식이다. 예를 들어 계산기가 숫자와 연산자를 받는다는 문법을 정의하면 퍼저가 `1+2`, `3+4` 같은 표현을 만들 수 있다.
+
+문법적으로는 유효하지만 프로그램이 예상하지 못한 입력을 많이 만들 수 있어 복잡한 파일 형식이나 프로토콜 테스트에 강하다. 다만 대상 형식의 문법을 직접 정의하기 어렵다는 단점이 있다.
+
+### Symbolic execution
+
+앞의 방식들이 테스트 입력을 먼저 만든 뒤 프로그램에 넣는다면, symbolic execution은 프로그램 코드를 분석해 특정 코드 경로에 도달하기 위해 필요한 입력 조건을 역으로 계산한다.
+
+## 참고 자료
+
+### [google/fuzzing](https://github.com/google/fuzzing/tree/master)
+
+구글이 만든 fuzzing 자료 모음 저장소이다. Tutorial, example, discussion, research proposal, dictionary, documentation 등을 모아 두었다.
+
+- `discussion`: 퍼징에 대한 토론이나 설명
+- `dictionary`: 퍼저가 입력값을 만들 때 참고하는 단어 목록
+
+### [The Fuzzing Book](https://github.com/uds-se/fuzzingbook)
+
+Random fuzzing, mutation-based fuzzing, grammar-based test generation, symbolic testing 등 퍼징의 주요 개념과 구현 방법을 예제와 함께 설명하는 학습 자료이다.
+
+### [The Art, Science, and Engineering of Fuzzing: A Survey](https://github.com/SoftSec-KAIST/Fuzzing-Survey)
+
+퍼저의 역사와 주요 특징을 정리한 서베이 자료이다. 논문과 관련 자료는 [fuzzing-survey.org](https://fuzzing-survey.org/)에서도 확인할 수 있다.
